@@ -1,0 +1,82 @@
+html {
+    margin: 0;
+    height: 100%;
+    background-color: #f3f3f3;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+form {
+    padding: 40px;
+    background-color:white;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.3);
+    padding: 40px;
+    
+}
+
+@media (max-width : 500px) {
+    form {
+        padding: 10px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+}
+
+tr:first-child {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+tr:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+}
+
+.se-bankid-ssn {
+    margin-bottom: 10px;
+}
+
+input#ssn {
+    font: 400 15px Arial;
+    padding: 3px 4px;
+    border-bottom: 2px solid #2cce7e;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+input:focus#ssn {
+    outline: 0;
+    border-bottom-color: #70dea8;
+    border-bottom-width: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    transition: padding 0.5s;
+}
+
+.se-bankid-linkbutton-submit {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.se-bankid-linkbutton-submit input {
+    background-image: none;
+    background-color: #2cce7e;
+    box-shadow: none;
+    border-radius: 30px;
+}
+
+.se-bankid-linkbutton {
+    color: #f0372c;
+    display: None;
+}
